@@ -99,12 +99,12 @@ To try the code yourself, you can do the following:
 
     Run the following commands in the command line (in the project directory)
     ```
-    pyinstaller --onefile --noconsole --hidden-import=xml.parsers.expat recorder.py
+    pyinstaller --onefile --noconsole recorder.py
     ```
     ```
-    pyinstaller --onefile --hidden-import=xml.parsers.expat --add-data "assets;assets" main.py
+    pyinstaller --onefile --add-data "static;static" --add-data "templates;templates" main.py
     ```
-    You will find the exectuables in the dist folder. Make sure to move the recorder.exe and app.exe to the root directory of the repository.
+    You will find the exectuables in the dist folder. Make sure to move the recorder.exe and main.exe to the root directory of the repository.
 
 4. Create a shortcut for the recorder.exe
 
